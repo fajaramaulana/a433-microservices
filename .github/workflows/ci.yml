@@ -2,9 +2,9 @@ name: CI Backend Karsajobs
 
 on:
   push:
-    branches: [main]
+    branches: [karsajobs]
   pull_request:
-    branches: [main]
+    branches: [karsajobs]
 
 jobs:
   lint-dockerfile:
