@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [karsajobs-ui]
 
-    
+
 jobs:
   lint-dockerfile:
     name: Lint Dockerfile
@@ -27,6 +27,7 @@ jobs:
   build-app-karsajobs-ui:
     name: Build & Push Docker Image to GHCR
     runs-on: ubuntu-latest
+    needs: [lint-dockerfile]
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
