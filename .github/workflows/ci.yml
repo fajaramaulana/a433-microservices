@@ -6,6 +6,7 @@ on:
   pull_request:
     branches: [karsajobs-ui]
 
+    
 jobs:
   lint-dockerfile:
     name: Lint Dockerfile
