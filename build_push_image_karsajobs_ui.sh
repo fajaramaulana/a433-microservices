@@ -8,4 +8,4 @@ docker build -t ${IMAGE_NAME} .
 # echo $PASSWORD_GITHUB_TOKEN | docker login ghcr.io -u fajaramaulana --password-stdin
 
 # Push image
-docker push ${IMAGE_NAME}t
+docker push ${IMAGE_NAME}
